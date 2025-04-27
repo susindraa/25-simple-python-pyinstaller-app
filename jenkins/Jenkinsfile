@@ -7,7 +7,7 @@ pipeline {
                 stash(name: 'compiled-results', includes: 'sources/*.py*') 
             }
         }
-    }
+    
 
 stage('Test') {
             steps {
@@ -19,4 +19,5 @@ stage('Test') {
                 }
             }
         }
+    }
 }
